@@ -1,0 +1,15 @@
+{
+  "name": "static-revision",
+  "version": "0.1.0",
+  "description": "Independent static asset revisioning tool.",
+  "repository": "magjckang/revision",
+  "keyword": [
+    "revision",
+    "asset",
+    "cache"
+  ],
+  "dependencies": {
+    "mz": "*"
+  },
+  "license": "MIT"
+}
