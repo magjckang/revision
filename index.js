@@ -5,6 +5,7 @@
 var crypto = require('crypto')
 var path = require('path')
 var fs = require('mz/fs')
+var cp = require('mz/child_process')
 
 /**
  * Expose.
@@ -36,6 +37,7 @@ function rev(opts) {
     var name = path.basename(dest)
     var newName = path.basename(dest, ext) + '-' + hash + ext
 
+    yield cp.exec(`mkdir -p ${dir}`)
     yield fs.writeFile(dir + '/' + newName, data)
 
     try {
