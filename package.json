@@ -1,6 +1,6 @@
 {
   "name": "static-revision",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Independent static asset revisioning tool.",
   "repository": "magjckang/revision",
   "keyword": [
@@ -8,7 +8,12 @@
     "asset",
     "cache"
   ],
+  "bin": {
+    "revision": "bin/revision.js"
+  },
   "dependencies": {
+    "co": "^4.5.4",
+    "commander": "^2.8.1",
     "mz": "*"
   },
   "license": "MIT"
